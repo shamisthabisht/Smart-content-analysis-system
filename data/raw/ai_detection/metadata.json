@@ -1,0 +1,40 @@
+{
+  "module": "AI-Generated vs Human-Written Text Detection",
+  "acquisition_date": "2026-10-09T08:12:11.531001",
+  "datasets": [
+    {
+      "name": "GPT-wiki-intro",
+      "source_url": "https://huggingface.co/datasets/aadityaubhat/GPT-wiki-intro",
+      "license": "CC-BY-SA 4.0",
+      "original_samples": 150000,
+      "downloaded_samples": 6000,
+      "raw_file": "data/raw/ai_detection\\raw_gpt_wiki_intro.jsonl",
+      "text_generators": [
+        "GPT-3 (Curie/Davinci)"
+      ],
+      "human_sources": [
+        "Wikipedia"
+      ],
+      "known_limitations": "Primarily introductory expository style; high formal quality."
+    },
+    {
+      "name": "HC3 (Human ChatGPT Comparison Corpus)",
+      "source_url": "https://huggingface.co/datasets/Hello-SimpleAI/hc3",
+      "license": "CC-BY 4.0",
+      "original_samples": 48644,
+      "downloaded_samples": 6000,
+      "raw_file": "data/raw/ai_detection\\raw_hc3.jsonl",
+      "text_generators": [
+        "ChatGPT (GPT-3.5-turbo)"
+      ],
+      "human_sources": [
+        "Reddit ELI5",
+        "Wikipedia QA",
+        "OpenQA",
+        "Finance",
+        "Medicine"
+      ],
+      "known_limitations": "Conversational & question-answering format; variable length answers."
+    }
+  ]
+}

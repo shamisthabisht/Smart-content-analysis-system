@@ -1,0 +1,28 @@
+{
+  "module": "Grammar Error Detection and Correction",
+  "acquisition_date": "2026-10-09T11:31:22.772695",
+  "datasets": [
+    {
+      "name": "Grammarly CoEdit (GEC)",
+      "source_url": "https://huggingface.co/datasets/grammarly/coedit",
+      "license": "CC-BY-NC-SA 4.0",
+      "original_samples": 19823,
+      "downloaded_samples": 8000,
+      "raw_file": "data/raw/grammar_correction\\raw_coedit_gec.jsonl",
+      "task": "Grammatical Error Correction (GEC)",
+      "format": "src (incorrect with task prefix) -> tgt (corrected text)",
+      "known_limitations": "Contains instruction prefixes; some sentence pairs may involve stylistic rephrasing."
+    },
+    {
+      "name": "JFLEG Benchmark (JHU FLuency-Extended GUG)",
+      "source_url": "https://huggingface.co/datasets/jhu-clsp/jfleg",
+      "license": "CC-BY 4.0",
+      "original_samples": 748,
+      "downloaded_samples": 748,
+      "raw_file": "data/raw/grammar_correction\\raw_jfleg_test.jsonl",
+      "task": "Fluency and Grammatical Error Correction Evaluation",
+      "format": "sentence -> 4 reference corrections list",
+      "known_limitations": "Standard benchmark test set; contains multi-reference corrections."
+    }
+  ]
+}

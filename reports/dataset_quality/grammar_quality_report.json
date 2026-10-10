@@ -1,0 +1,21 @@
+{
+  "module": "Grammar Error Detection and Correction",
+  "coedit_final_pairs": 7988,
+  "jfleg_benchmark_pairs": 747,
+  "filtering_statistics": {
+    "coedit_raw_rows": 8000,
+    "jfleg_raw_rows": 748,
+    "removed_empty_or_null": 0,
+    "removed_too_short": 12,
+    "removed_too_long": 0,
+    "removed_duplicate_pairs": 0,
+    "identical_source_target_pairs": 3
+  },
+  "coedit_changed_ratio": 0.9996244366549825,
+  "text_statistics": {
+    "source_char_length_mean": 150.34351527290937,
+    "source_char_length_std": 52.064682005356666,
+    "target_char_length_mean": 122.39697045568353,
+    "source_word_count_mean": 24.646344516775162
+  }
+}

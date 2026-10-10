@@ -1,0 +1,36 @@
+{
+  "module": "AI-Generated vs Human-Written Text Detection",
+  "original_extracted_rows": 20000,
+  "final_cleaned_rows": 19912,
+  "filtering_statistics": {
+    "gpt_wiki_intro_raw_rows": 6000,
+    "hc3_raw_rows": 6000,
+    "removed_empty_or_null": 0,
+    "removed_too_short": 45,
+    "removed_too_long": 39,
+    "removed_exact_duplicates": 4
+  },
+  "class_distribution": {
+    "ai": 9995,
+    "human": 9917
+  },
+  "source_dataset_distribution": {
+    "gpt_wiki_intro": 9999,
+    "hc3": 9913
+  },
+  "generator_distribution": {
+    "human": 9917,
+    "gpt3": 4999,
+    "chatgpt": 4996
+  },
+  "text_statistics": {
+    "char_length_mean": 944.9781036560868,
+    "char_length_std": 497.69440127812635,
+    "char_length_min": 50,
+    "char_length_max": 4990,
+    "word_count_mean": 164.9755926074729,
+    "word_count_std": 91.92761205955907,
+    "word_count_min": 9,
+    "word_count_max": 1084
+  }
+}

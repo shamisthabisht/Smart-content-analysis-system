@@ -1,0 +1,36 @@
+{
+  "model_name": "vennify/t5-base-grammar-correction",
+  "validation_samples_evaluated": 100,
+  "metrics": {
+    "sacrebleu_score": 79.59189183204998,
+    "chrf_score": 90.8999589888305,
+    "exact_match_percentage": 16.0
+  },
+  "sample_comparisons": [
+    {
+      "original_incorrect": "Remove grammatical mistakes: The nuclear accident happened at Chernobyl was mainly because the nuclear plant utilized positive void coefficient of reactivity, causing it impossible to stop the working process when things went wrong.",
+      "reference_target": "The nuclear accident at Chornobyl was mainly because the nuclear plant utilized a positive void coefficient of reactivity, causing it impossible to stop the working process when things went wrong.",
+      "model_prediction": "The nuclear accident happened at Chernobyl mainly because the nuclear plant utilized positive void coefficient of reactivity, causing it impossible to stop the working process when things went wrong."
+    },
+    {
+      "original_incorrect": "Fix all grammatical errors: In twentieth century, the safety of using Uranium is still under the discussion.",
+      "reference_target": "In the twentieth century, the safety of using Uranium is still under discussion.",
+      "model_prediction": "In the twentieth century, the safety of using Uranium is still under the discussion."
+    },
+    {
+      "original_incorrect": "Make the sentence fluent: I love my town, because when I was a small girl, I went there, and I was with my grandparents, my cousins and my friends.",
+      "reference_target": "I love my town because, when I was a small girl, I went there, and I was with my grandparents, my cousins, and my friends.",
+      "model_prediction": "I love my town, because when I was a small girl, I went there, and I was with my grandparents, my cousins and my friends."
+    },
+    {
+      "original_incorrect": "Make the sentence grammatical: In view of the collapse of Nicoll highway back in April 2004, HDB has put up very strict requirements on the piling process and the materials used, like grade 30 concrete should be used in piling.",
+      "reference_target": "In view of the collapse of the Nicoll highway back in April 2004, HDB has put up very strict requirements for the piling process, and the materials used, like grade 30 concrete, should be used in piling.",
+      "model_prediction": "In view of the collapse of the Nicoll highway back in April 2004, HDB has put up very strict requirements on the piling process and the materials used, like grade 30 concrete, should be used in piling."
+    },
+    {
+      "original_incorrect": "Fix grammaticality in this sentence: It can be seen that as technology develops, electronic dictronary will be more and more helpful to students.",
+      "reference_target": "It can be seen that as technology develops, electronic dictionary will be more and more helpful to students.",
+      "model_prediction": "It can be seen that as technology develops, electronic textbooks will be more and more helpful to students."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+dataset:
+  raw_dir: "data/raw/grammar_correction"
+  processed_dir: "data/processed/grammar_correction"
+  splits_dir: "data/splits/grammar_correction"
+  coedit_sample_size: 8000
+  jfleg_eval_size: 748
+  random_seed: 42
+  test_size: 0.10
+  val_size: 0.10
+
+preprocessing:
+  min_char_length: 10
+  max_char_length: 1000
+  clean_instruction_prefix: true # removes 'Remove all grammatical errors from this text: ' prefix for general grammar usage
+  filter_identical_pairs: false # Keep some unchanged sentences for negative samples or filter as configured
+
+model:
+  pretrained_model_name: "vennify/t5-base-grammar-correction"
+  fallback_model_name: "google-t5/t5-small"
+  max_source_length: 128
+  max_target_length: 128
+  num_beams: 4
+  batch_size: 8
+  output_model_dir: "models/grammar_correction"
+  reports_dir: "reports"

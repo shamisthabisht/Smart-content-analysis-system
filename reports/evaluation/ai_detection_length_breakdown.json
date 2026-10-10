@@ -1,0 +1,92 @@
+{
+  "< 50 words": {
+    "samples": 104,
+    "human_count": 85,
+    "ai_count": 19,
+    "accuracy": 0.875,
+    "precision": 0.6071428571428571,
+    "recall": 0.8947368421052632,
+    "f1_score": 0.723404255319149,
+    "roc_auc": 0.9647058823529412,
+    "brier_score": 0.0824960922254933,
+    "avg_confidence": 0.8323288019877791,
+    "confusion_matrix": {
+      "TN": 74,
+      "FP": 11,
+      "FN": 2,
+      "TP": 17
+    }
+  },
+  "50 - 100 words": {
+    "samples": 322,
+    "human_count": 130,
+    "ai_count": 192,
+    "accuracy": 0.968944099378882,
+    "precision": 0.989247311827957,
+    "recall": 0.9583333333333334,
+    "f1_score": 0.9735449735449735,
+    "roc_auc": 0.9981169871794873,
+    "brier_score": 0.029131274469002946,
+    "avg_confidence": 0.9053212916337594,
+    "confusion_matrix": {
+      "TN": 128,
+      "FP": 2,
+      "FN": 8,
+      "TP": 184
+    }
+  },
+  "> 100 words": {
+    "samples": 1566,
+    "human_count": 777,
+    "ai_count": 789,
+    "accuracy": 0.9680715197956578,
+    "precision": 0.9671302149178256,
+    "recall": 0.9695817490494296,
+    "f1_score": 0.9683544303797469,
+    "roc_auc": 0.995586026004277,
+    "brier_score": 0.031238335077534148,
+    "avg_confidence": 0.90470526889297,
+    "confusion_matrix": {
+      "TN": 751,
+      "FP": 26,
+      "FN": 24,
+      "TP": 765
+    }
+  },
+  "< 30 words (very short)": {
+    "samples": 44,
+    "human_count": 44,
+    "ai_count": 0,
+    "accuracy": 0.8636363636363636,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "roc_auc": NaN,
+    "brier_score": 0.10192888149945595,
+    "avg_confidence": 0.7985093893243937,
+    "confusion_matrix": {
+      "TN": 38,
+      "FP": 6,
+      "FN": 0,
+      "TP": 0
+    }
+  },
+  "30 - 50 words (short)": {
+    "samples": 60,
+    "human_count": 41,
+    "ai_count": 19,
+    "accuracy": 0.8833333333333333,
+    "precision": 0.7727272727272727,
+    "recall": 0.8947368421052632,
+    "f1_score": 0.8292682926829268,
+    "roc_auc": 0.9743260590500642,
+    "brier_score": 0.068245380091254,
+    "avg_confidence": 0.8571297046075952,
+    "confusion_matrix": {
+      "TN": 36,
+      "FP": 5,
+      "FN": 2,
+      "TP": 17
+    }
+  }
+}

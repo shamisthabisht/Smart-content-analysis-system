@@ -1,0 +1,91 @@
+{
+  "module": "Module B: Grammar Error Detection and Correction",
+  "model_name": "vennify/t5-base-grammar-correction",
+  "coedit_test_evaluation": {
+    "test_samples_evaluated": 150,
+    "sacrebleu_score": 89.38651488499075,
+    "chrf_plus_score": 94.04098148255471,
+    "exact_match_percentage": 8.666666666666668
+  },
+  "jfleg_benchmark_evaluation": {
+    "benchmark_samples_evaluated": 150,
+    "multi_ref_bleu_score": 93.20771656579409,
+    "multi_ref_chrf_score": 95.79110373429458
+  },
+  "successful_correction_examples": [
+    {
+      "source_raw": "Fix grammar errors in this sentence: In this aspect, the government is entirely supportive of children fulfilling the filial obligations.",
+      "reference_target": "In this aspect, the government is entirely supportive of children fulfilling their filial obligations.",
+      "model_corrected": "In this aspect, the government is entirely supportive of children fulfilling their filial obligations."
+    },
+    {
+      "source_raw": "Fix grammatical errors in this sentence: Memories of the terrorist attacks happened around the world will always serve as a stark reminder to everyone that a lapse in security will result in heavy casualties.",
+      "reference_target": "Memories of the terrorist attacks that happened around the world will always serve as a stark reminder to everyone that a lapse in security will result in heavy casualties.",
+      "model_corrected": "Memories of the terrorist attacks that happened around the world will always serve as a stark reminder to everyone that a lapse in security will result in heavy casualties."
+    },
+    {
+      "source_raw": "Fix disfluencies in the sentence: my favorite singer is AVICII",
+      "reference_target": "My favorite singer is AVICII.",
+      "model_corrected": "My favorite singer is Avicii."
+    },
+    {
+      "source_raw": "Make the sentence fluent: Furthermore, there was a slight decrease in Vacations/leisure allocation from 25% in 2000 to around 10% in 2010",
+      "reference_target": "Furthermore, there was a slight decrease in vacations/leisure allocation from 25% in 2000 to around 10% in 2010.",
+      "model_corrected": "Furthermore, there was a slight decrease in Vacations/leisure allocation from 25% in 2000 to around 10% in 2010."
+    },
+    {
+      "source_raw": "Fix grammaticality: Finally, we enjoy in both ways in our life.",
+      "reference_target": "Finally, we enjoy both ways in our life.",
+      "model_corrected": "Finally, we enjoy both ways in our life."
+    },
+    {
+      "source_raw": "Fix errors in this text: they prefer to be comfortable.",
+      "reference_target": "They prefer to be comfortable.",
+      "model_corrected": "They prefer to be comfortable."
+    }
+  ],
+  "challenging_correction_examples": [
+    {
+      "source_raw": "Fix grammar errors: Thank for your help and I hope you will find the best company for me.",
+      "reference_target": "Thank you for your help, and I hope you will find the best company for me.",
+      "model_corrected": "Thank you for your help and I hope you will find the best company for me."
+    },
+    {
+      "source_raw": "Improve the grammaticality of this sentence: At the Seaside's you are genuinely welcomed at the first doorstep, they accept you whoever you are.",
+      "reference_target": "At the Seaside, you are genuinely welcomed at the first doorstep; they accept you whoever you are.",
+      "model_corrected": "At Seaside's you are genuinely welcomed at the first doorstep, they accept you whoever you are."
+    },
+    {
+      "source_raw": "Fix grammar errors: The patients know the different behavioral patterns of his family members and will know the best way to approach them regarding his genetic condition.",
+      "reference_target": "The patient knows the different behavioral patterns of his family members and will know the best way to approach them regarding their genetic condition.",
+      "model_corrected": "The patients know the different behavioral patterns of his family members and will know the best way to approach them regarding his genetic condition."
+    },
+    {
+      "source_raw": "Fix grammatical errors in this sentence: The young generation should be grateful to their senior citizen's contribution because the prosperity of today's country is built by the older generation when they are young.",
+      "reference_target": "The younger generation should be grateful for their senior citizen's contribution because the prosperity of today's country is built by the older generation when they are young.",
+      "model_corrected": "The young generation should be grateful to their senior citizen's contribution because the prosperity of today's country is built by the older generation when they are young."
+    },
+    {
+      "source_raw": "Remove grammatical mistakes: Alternatively, there should be adjustments on fiscal spending on the aged based on their percentage in the country's population.",
+      "reference_target": "Alternatively, there should be some adjustments on fiscal spending on the aged based on their percentage in the country's population.",
+      "model_corrected": "Alternatively, there should be adjustments on fiscal spending on the aged based on their percentage in the country's population."
+    },
+    {
+      "source_raw": "Fix grammar errors in this sentence: However, critics have been quick to point out that it is an intrusion of privacy and are calling for it to be banned.",
+      "reference_target": "However, critics have been quick to point out that this is an intrusion of privacy and are calling for it to be banned.",
+      "model_corrected": "However, critics have been quick to point out that it is an intrusion of privacy and are calling for it to be banned."
+    }
+  ],
+  "error_categories_addressed": [
+    "Subject-Verb Agreement (e.g., 'he go' -> 'he goes')",
+    "Verb Tense Inconsistencies (e.g., 'yesterday I go' -> 'yesterday I went')",
+    "Singular/Plural Noun Inflections",
+    "Preposition and Article Omission/Misuse (e.g., 'interested on' -> 'interested in')",
+    "Spelling and Typographical Normalization",
+    "Punctuation and Capitalization Alignment"
+  ],
+  "limitations": [
+    "Severe colloquial slangs or heavy ungrammatical jargon may be over-regularized.",
+    "Multi-sentence inputs should be sentence-tokenized for optimal precision."
+  ]
+}

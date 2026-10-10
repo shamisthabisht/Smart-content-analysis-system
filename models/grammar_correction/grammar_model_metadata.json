@@ -1,0 +1,9 @@
+{
+  "model_architecture": "T5 Seq2Seq Text-to-Text Grammar Corrector",
+  "selected_pretrained_model": "vennify/t5-base-grammar-correction",
+  "device": "cpu",
+  "max_length": 128,
+  "num_beams": 4,
+  "tokenizer_path": "models/grammar_correction\\tokenizer",
+  "task_prefix": ""
+}

@@ -1,0 +1,31 @@
+dataset:
+  raw_dir: "data/raw/ai_detection"
+  processed_dir: "data/processed/ai_detection"
+  splits_dir: "data/splits/ai_detection"
+  sample_size_per_class: 6000 # balanced dataset of 12,000 total high-quality samples
+  random_seed: 42
+  test_size: 0.10
+  val_size: 0.10
+
+preprocessing:
+  min_char_length: 50
+  max_char_length: 5000
+  remove_duplicate_threshold: 0.95
+  normalize_whitespace: true
+
+training:
+  baseline:
+    model_type: "tfidf_logistic_regression"
+    ngram_range: [1, 2]
+    max_features: 25000
+    sublinear_tf: true
+    C: 2.0
+    max_iter: 1000
+  transformer_baseline:
+    model_name: "distilbert/distilbert-base-uncased"
+    batch_size: 16
+    epochs: 2
+    learning_rate: 2e-5
+    max_length: 256
+  output_model_dir: "models/ai_detection"
+  reports_dir: "reports"

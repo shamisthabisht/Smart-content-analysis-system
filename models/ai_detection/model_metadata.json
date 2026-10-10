@@ -1,0 +1,37 @@
+{
+  "best_model_name": "TF-IDF + Logistic Regression",
+  "selected_metric": "f1_score",
+  "validation_f1": 0.9647992067426872,
+  "all_candidates_validation": {
+    "TF-IDF + Logistic Regression": {
+      "accuracy": 0.9643395278754395,
+      "precision": 0.9557956777996071,
+      "recall": 0.973973973973974,
+      "f1_score": 0.9647992067426872,
+      "roc_auc": 0.9951221382672994
+    },
+    "TF-IDF + Linear SVM (SGD)": {
+      "accuracy": 0.9628327473631341,
+      "precision": 0.9611166500498505,
+      "recall": 0.964964964964965,
+      "f1_score": 0.9630369630369631,
+      "roc_auc": 0.9944400045206496
+    },
+    "TF-IDF + Multinomial Naive Bayes": {
+      "accuracy": 0.9055750878955299,
+      "precision": 0.9327641408751334,
+      "recall": 0.8748748748748749,
+      "f1_score": 0.9028925619834711,
+      "roc_auc": 0.9733332122445025
+    }
+  },
+  "classes": [
+    "human",
+    "ai"
+  ],
+  "label_mapping": {
+    "0": "human",
+    "1": "ai"
+  },
+  "model_path": "models/ai_detection\\best_ai_detector.joblib"
+}

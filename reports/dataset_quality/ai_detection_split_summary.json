@@ -1,0 +1,27 @@
+{
+  "module": "AI-Generated vs Human-Written Text Detection",
+  "random_seed": 42,
+  "train_samples": 15929,
+  "val_samples": 1991,
+  "test_samples": 1992,
+  "train_class_balance": {
+    "ai": 7996,
+    "human": 7933
+  },
+  "val_class_balance": {
+    "ai": 999,
+    "human": 992
+  },
+  "test_class_balance": {
+    "ai": 1000,
+    "human": 992
+  },
+  "train_sources": {
+    "gpt_wiki_intro": 8006,
+    "hc3": 7923
+  },
+  "test_sources": {
+    "gpt_wiki_intro": 1012,
+    "hc3": 980
+  }
+}

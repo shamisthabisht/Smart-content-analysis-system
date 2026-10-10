@@ -1,0 +1,63 @@
+{
+  "module": "Module A: AI-Generated vs Human-Written Text Detection",
+  "model_file": "models/ai_detection/best_ai_detector.joblib",
+  "test_samples": 1992,
+  "overall_metrics": {
+    "accuracy": 0.9633534136546185,
+    "precision": 0.9611940298507463,
+    "recall": 0.966,
+    "f1_score": 0.9635910224438903,
+    "roc_auc": 0.99490625
+  },
+  "confusion_matrix": {
+    "true_negatives_human": 953,
+    "false_positives_ai": 39,
+    "false_negatives_human": 34,
+    "true_positives_ai": 966
+  },
+  "per_class_classification_report": {
+    "Human": {
+      "precision": 0.9655521783181358,
+      "recall": 0.9606854838709677,
+      "f1-score": 0.9631126831733199,
+      "support": 992.0
+    },
+    "AI": {
+      "precision": 0.9611940298507463,
+      "recall": 0.966,
+      "f1-score": 0.9635910224438903,
+      "support": 1000.0
+    },
+    "accuracy": 0.9633534136546185,
+    "macro avg": {
+      "precision": 0.9633731040844411,
+      "recall": 0.9633427419354839,
+      "f1-score": 0.9633518528086051,
+      "support": 1992.0
+    },
+    "weighted avg": {
+      "precision": 0.9633643527822977,
+      "recall": 0.9633534136546185,
+      "f1-score": 0.9633528133292287,
+      "support": 1992.0
+    }
+  },
+  "subgroup_source_evaluations": {
+    "gpt_wiki_intro": {
+      "samples": 1012,
+      "accuracy": 0.9426877470355731,
+      "precision": 0.9482071713147411,
+      "recall": 0.937007874015748,
+      "f1_score": 0.9425742574257425,
+      "roc_auc": 0.9868610173728284
+    },
+    "hc3": {
+      "samples": 980,
+      "accuracy": 0.9846938775510204,
+      "precision": 0.974155069582505,
+      "recall": 0.9959349593495935,
+      "f1_score": 0.9849246231155779,
+      "roc_auc": 0.9994252299080367
+    }
+  }
+}

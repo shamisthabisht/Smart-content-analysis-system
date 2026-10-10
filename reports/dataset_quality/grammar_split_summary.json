@@ -1,0 +1,9 @@
+{
+  "module": "Grammar Error Detection and Correction",
+  "random_seed": 42,
+  "train_pairs": 6390,
+  "val_pairs": 799,
+  "test_pairs": 799,
+  "jfleg_benchmark_samples": 747,
+  "split_strategy": "Non-overlapping source sentences split with fixed random seed."
+}
